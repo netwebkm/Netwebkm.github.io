@@ -3,13 +3,6 @@ const overflowMenu = document.getElementById("overflow-menu");
 document.addEventListener("click", function () {
   bar.classList.remove("movingbar");
 });
-document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("shoot")) {
-    overflowMenu.classList.add("menu-slide");
-  } else {
-    overflowMenu.classList.remove("menu-slide");
-  }
-});
 document.addEventListener("mousemove", function (event) {
   if (event.clientX <= 5 && bar.classList.contains("movingbar") !== true) {
     bar.classList.add("movingbar");
@@ -229,6 +222,17 @@ function filterStuff(colorArray, color) {
     });
     secondArray = finalArray;
     arrangeBoxes(finalArray, finalArrayIds);
+  } else if (color === "featured") {
+    let finalArray = [];
+    let finalArrayIds = [];
+    colorArray.forEach((item) => {
+      if (item.featured) {
+        finalArray.push(item.name);
+        finalArrayIds.push(item.id);
+      }
+    });
+    secondArray = finalArray;
+    arrangeBoxes(finalArray, finalArrayIds);
   } else {
     let finalArrayIds = [];
     let finalArrayNames = [];
@@ -248,8 +252,22 @@ function arrangeBoxes(newArrayy, newIds) {
     newBox.classList.add("game");
     newBox.setAttribute("id", `game${newIds[arrayIndex]}`);
     newBox.innerHTML = element;
+    everythingArray.forEach((item) => {
+      if (item.id == newIds[arrayIndex]) {
+        newBox.style.backgroundImage = `linear-gradient(
+          rgba(40, 40, 40, 0.2),
+          rgba(20, 20, 20, 0.9)
+          ),
+          url("${item.link + item.thumb}")`;
+        newBox.addEventListener("click", () => {
+          const params = new URLSearchParams({ target: item.id });
+          window.location.href = `game.html?${params.toString()}`;
+        });
+      }
+    });
+
     filterGamesList.appendChild(newBox);
-    let computedStyle = window.getComputedStyle(newBox).backgroundImage;
+    /*let computedStyle = window.getComputedStyle(newBox).backgroundImage;
     let computedStylee = computedStyle.substring(
       computedStyle.indexOf(`url("`) + 5
     );
@@ -258,10 +276,9 @@ function arrangeBoxes(newArrayy, newIds) {
       "/",
       projectsPosition + "projects/".length
     );
-    let computedStyleee = computedStylee.substring(0, slashIndex);
+    let computedStyleee = computedStylee.substring(0, slashIndex);*/
     filterGamesList.removeChild(newBox);
-    console.log(computedStylee);
-    newBox.setAttribute("href", computedStyleee);
+    //newBox.setAttribute("href", computedStyleee);
     filterGamesList.appendChild(newBox);
     arrayIndex++;
   });
@@ -354,7 +371,7 @@ function select() {
   let items = list.getElementsByTagName("a");
   let itemsL = Array.from(items);
   let r = Math.random();
-  let rw = Math.floor(r * 275);
+  let rw = Math.floor(r * 399);
   let selected = items[rw];
   itemsL.forEach(function (item) {
     if (item.contains(selected)) {
@@ -362,7 +379,11 @@ function select() {
       item.setAttribute("name", item.innerHTML);
       item.style.paddingBlock = "10px";
       list.innerHTML = item.outerHTML;
-    } else {
+      let id = item.getAttribute("id").slice(4);
+      list.children[0].addEventListener("click", () => {
+        const params = new URLSearchParams({ target: id });
+        window.location.href = `game.html?${params.toString()}`;
+      });
     }
   });
 }
@@ -383,17 +404,8 @@ function search() {
 
     if (itemText.includes(searchTerm)) {
       item.style.display = "flex";
-      item.style.width = "110px";
-      item.style.height = "110px";
-      item.style.marginInline = "5px";
-      item.style.marginBlock = "6px";
-      item.style.paddingInline = "10px";
-      item.style.paddingBottom = "10px";
     } else {
-      item.style.width = "0";
-      item.style.height = "0";
-      item.style.padding = "0";
-      item.style.margin = "0";
+      item.style.display = "none";
     }
   }
 }

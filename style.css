@@ -486,6 +486,9 @@ label:hover {
   font-size: 20px;
   padding: 20px;
   color: var(--text-color);
+  width: 65%;
+  margin-inline: 17.5%;
+  line-height: 30px;
 }
 
 .new {
@@ -777,7 +780,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-inline: 5px;
+  padding-inline: 50px;
   padding-bottom: 20px;
 }
 
@@ -788,6 +791,7 @@ h2 {
 .game {
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: end;
   font-size: 14px;
   margin-inline: 6px;
@@ -1308,7 +1312,7 @@ body {
 }
 
 .modal-des {
-  color: rgb(180, 180, 180);
+  color: rgb(200, 200, 200);
   line-height: 25px;
   font-size: 16px;
   margin-bottom: 30px;
