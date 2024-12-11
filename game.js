@@ -185,4 +185,6 @@ document.addEventListener("DOMContentLoaded", () => {
     root.style.setProperty("--bar-color", "rgb(70, 70, 70)");
   }
   //Above is code for setting the theme
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  //Above is code for Google Ads
 });

@@ -239,7 +239,7 @@ iframe {
 }
 
 .nav,
-.side-search {
+.side-search, .ad-container {
   background-color: var(--black-color);
   border-radius: 10px;
   width: 95%;
@@ -251,6 +251,10 @@ iframe {
   flex-direction: column;
   color: white;
   padding-block: 20px;
+}
+
+.ad-container ins {
+  width: 80%;
 }
 
 .side-search {
@@ -438,6 +442,14 @@ iframe {
 .side-game {
   width: 100px;
   height: 100px;
+}
+
+.ad-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 h2 {
