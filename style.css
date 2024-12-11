@@ -1227,7 +1227,16 @@ body {
   display: flex;
   justify-content: center;
   padding-inline: 100px;
-  height: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+}
+
+.ad-container ins {
+  height: 100%;
+  width: 100%;
 }
 
 .select {
