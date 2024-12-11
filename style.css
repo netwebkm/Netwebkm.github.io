@@ -1227,6 +1227,7 @@ body {
   display: flex;
   justify-content: center;
   padding-inline: 100px;
+  height: 200px;
 }
 
 .select {
