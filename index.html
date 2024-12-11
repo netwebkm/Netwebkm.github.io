@@ -78,7 +78,8 @@
         <h2 class="modal-title">MacVG Winter Update</h2>
         <img src="media/update.jpg" class="modal-img" />
         <p class="modal-des">
-          HUGE UPDATE: VERSION 3.0, 40+ new games, new features, logo, improvements, fixes, removed features, and more!
+          HUGE UPDATE: VERSION 3.0, 40+ new games, new features, logo,
+          improvements, fixes, removed features, and more!
         </p>
         <a
           href="/macblog/updates/macvg/2025/winter.html"
@@ -152,7 +153,35 @@
         </button>
       </div>
       <div class="games-container" id="randomList"></div>
+      <div class="ad-container">
+        <!-- MacVG homepage ads -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-5598129470490010"
+          data-ad-slot="3087664545"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
       <div class="games-container" id="list"></div>
+      <div class="ad-container">
+        <!-- MacVG homepage ads -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-5598129470490010"
+          data-ad-slot="3087664545"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
     </div>
     <footer class="footer">
       © 2024 <a href="/">MacWeb</a
@@ -268,7 +297,7 @@
       rgba(40, 40, 40, 0.2),
       rgba(20, 20, 20, 0.9)
     ),
-    url("${dataItem.link + dataItem.thumb}")`
+    url("${dataItem.link + dataItem.thumb}")`;
                 item.addEventListener("click", () => {
                   const params = new URLSearchParams({ target: dataItem.id });
                   window.location.href = `game.html?${params.toString()}`;
