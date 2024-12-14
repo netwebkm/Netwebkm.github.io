@@ -202,6 +202,16 @@ function sortStuff(targetArray, key) {
       finalGames.push(item.name);
     });
     arrangeBoxes(finalGames, finalArrayIds);
+  } else if (key === "direction") {
+    let gameList = document.getElementById("list").querySelectorAll(".game");
+    gameList = [...gameList].reverse();
+    let finalArrayIds = [];
+    let finalGames = [];
+    gameList.forEach((item) => {
+      finalArrayIds.push(item.getAttribute("id").slice(4));
+      finalGames.push(item.innerHTML);
+    });
+    arrangeBoxes(finalGames, finalArrayIds);
   }
 }
 
@@ -227,6 +237,17 @@ function filterStuff(colorArray, color) {
     let finalArrayIds = [];
     colorArray.forEach((item) => {
       if (item.featured) {
+        finalArray.push(item.name);
+        finalArrayIds.push(item.id);
+      }
+    });
+    secondArray = finalArray;
+    arrangeBoxes(finalArray, finalArrayIds);
+  } else if (color === "download") {
+    let finalArray = [];
+    let finalArrayIds = [];
+    colorArray.forEach((item) => {
+      if (item.download) {
         finalArray.push(item.name);
         finalArrayIds.push(item.id);
       }
@@ -394,6 +415,21 @@ function gotIt() {
 }
 
 function search() {
+  let searchInput = document.getElementById("searchInput");
+  const searchClear = document.getElementById("search-clear");
+  if (searchInput.value.trim() !== "") {
+    searchClear.style.display = "flex";
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      searchClear.style.display = "none";
+      var list = document.getElementById("list");
+      var items = list.getElementsByTagName("a");
+      for (var i = 0; i < items.length; i++) {
+        items[i].style.display = "flex";
+      }
+      searchInput.focus();
+    });
+  }
   var searchTerm = document.getElementById("searchInput").value.toLowerCase();
   var list = document.getElementById("list");
   var items = list.getElementsByTagName("a");

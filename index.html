@@ -119,7 +119,11 @@
           oninput="search()"
           autocomplete="off"
           placeholder="Search All Games"
-        /><button class="random" id="random" title="Random Game Selector">
+        />
+        <button class="search-clear" id="search-clear">
+          <img src="media/close.svg" />
+        </button>
+        <button class="random" id="random" title="Random Game Selector">
           🎲
         </button>
       </div>
@@ -132,16 +136,20 @@
           </div>
         </div>
         <div class="filter" id="filter">
-          <div class="label">Filter All (399)</div>
+          <div class="label">Filter All (420)</div>
           <div class="filter-list">
             <li class="filter-item" id="filter-all">All</li>
-            <li class="filter-item" id="filter-featured">Featured (51)</li>
-            <li class="filter-item" id="filter-action">Action (156)</li>
-            <li class="filter-item" id="filter-strategy">Strategy (135)</li>
-            <li class="filter-item" id="filter-casual">Casual (55)</li>
-            <li class="filter-item" id="filter-driving">Driving (53)</li>
+            <li class="filter-item" id="filter-featured">Featured (50)</li>
+            <li class="filter-item" id="filter-action">Action (165)</li>
+            <li class="filter-item" id="filter-strategy">Strategy (136)</li>
+            <li class="filter-item" id="filter-casual">Casual (64)</li>
+            <li class="filter-item" id="filter-driving">Driving (55)</li>
+            <li class="filter-item" id="filter-download">Downloadable (68)</li>
           </div>
         </div>
+        <button class="filter direction" id="direction">
+          <img src="media/up.svg" />
+        </button>
       </div>
       <div class="games-container" id="favoriteList" style="position: relative">
         <button
@@ -269,8 +277,10 @@
       const filterStrategy = document.getElementById("filter-strategy");
       const filterCasual = document.getElementById("filter-casual");
       const filterDriving = document.getElementById("filter-driving");
+      const filterDownload = document.getElementById("filter-download");
       const sortName = document.getElementById("sort-name");
       const sortCatagory = document.getElementById("sort-catagory");
+      const directionBtn = document.getElementById("direction");
       let filterGamesList = document.getElementById("list");
 
       let newArray = [];
@@ -294,10 +304,10 @@
             data.forEach((dataItem) => {
               if (dataItem.id == itemID.slice(4)) {
                 item.style.backgroundImage = `linear-gradient(
-      rgba(40, 40, 40, 0.2),
-      rgba(20, 20, 20, 0.9)
-    ),
-    url("${dataItem.link + dataItem.thumb}")`;
+        rgba(40, 40, 40, 0.2),
+        rgba(20, 20, 20, 0.9)
+      ),
+      url("${dataItem.link + dataItem.thumb}")`;
                 item.addEventListener("click", () => {
                   const params = new URLSearchParams({ target: dataItem.id });
                   window.location.href = `game.html?${params.toString()}`;
@@ -339,22 +349,25 @@
         let targetLabel = eTarget.parentElement.parentElement.children[0];
         if (eTarget === filterAction) {
           filterStuff(everythingArray, "action");
-          targetLabel.innerHTML = "Action & Adventure (156)";
+          targetLabel.innerHTML = "Action & Adventure (165)";
         } else if (eTarget === filterStrategy) {
           filterStuff(everythingArray, "strategy");
-          targetLabel.innerHTML = "Strategy & Puzzle (135)";
+          targetLabel.innerHTML = "Strategy & Puzzle (136)";
         } else if (eTarget === filterFeatured) {
           filterStuff(everythingArray, "featured");
-          targetLabel.innerHTML = "Featured Games (51)";
+          targetLabel.innerHTML = "Featured Games (50)";
         } else if (eTarget === filterCasual) {
           filterStuff(everythingArray, "casual");
-          targetLabel.innerHTML = "Casual & Idle (55)";
+          targetLabel.innerHTML = "Casual & Idle (64)";
         } else if (eTarget === filterDriving) {
           filterStuff(everythingArray, "driving");
-          targetLabel.innerHTML = "Driving & Sports (53)";
+          targetLabel.innerHTML = "Driving & Sports (55)";
+        } else if (eTarget === filterDownload) {
+          filterStuff(everythingArray, "download");
+          targetLabel.innerHTML = "Downloadable Games (68)";
         } else if (eTarget === filterAll) {
           sortStuff(everythingArray, "name");
-          targetLabel.innerHTML = "Filter All (399)";
+          targetLabel.innerHTML = "Filter All (420)";
         } else if (eTarget === sortName) {
           targetLabel.innerHTML = "Sort By: Name";
           sortStuff(secondArray, "name");
@@ -362,6 +375,18 @@
           targetLabel.innerHTML = "Sort By: Catagory";
           sortStuff(secondArray, "catagory");
         }
+      });
+
+      directionBtn.style.transform = "rotateX(180deg)"
+
+      directionBtn.addEventListener("click", () => {
+        let img = directionBtn.children[0];
+        if (img.style.transform == "rotateX(180deg)") {
+          img.style.transform = "rotateX(0deg)";
+        } else {
+          img.style.transform = "rotateX(180deg)";
+        }
+          sortStuff(secondArray, "direction");
       });
     </script>
   </body>
