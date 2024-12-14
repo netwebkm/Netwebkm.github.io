@@ -1274,6 +1274,7 @@ body {
   position: relative;
   border: 1px solid gray;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .ad-container::after {
