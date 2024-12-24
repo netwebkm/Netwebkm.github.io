@@ -45,90 +45,6 @@ function unCloak() {
   localStorage.setItem("title", "");
 }
 
-function panic() {
-  const button = document.getElementById("name2").value;
-  localStorage.setItem("panic", button);
-  let thing23 = document.getElementById("current");
-  let panicKeys = localStorage.getItem("panic");
-  let href = localStorage.getItem("href");
-  if (panicKeys && href) {
-    thing23.innerHTML =
-      `<div class="panickeys">` +
-      "<div>" +
-      "Current key: " +
-      panicKeys +
-      "</div>" +
-      "<div>" +
-      " Redirecting: " +
-      href +
-      "</div>" +
-      "</div>";
-  } else if (panicKeys) {
-    thing23.innerHTML =
-      `<div class="panickeys">` +
-      "<div>" +
-      "Current key: " +
-      panicKeys +
-      "</div>" +
-      "<div>" +
-      " Redirecting: https://google.com" +
-      "</div>" +
-      "</div>";
-  } else {
-    thing23.innerHTML =
-      `<div class="panickeys">` +
-      "<div>" +
-      "Current key: `" +
-      "</div>" +
-      "<div>" +
-      " Redirecting: https://google.com" +
-      "</div>" +
-      "</div>";
-  }
-}
-
-function url() {
-  const inputurl = document.getElementById("name3").value;
-  localStorage.setItem("href", "https://" + inputurl);
-  let thing23 = document.getElementById("current");
-  let panicKeys = localStorage.getItem("panic");
-  let href = localStorage.getItem("href");
-  if (panicKeys && href) {
-    thing23.innerHTML =
-      `<div class="panickeys">` +
-      "<div>" +
-      "Current key: " +
-      panicKeys +
-      "</div>" +
-      "<div>" +
-      " Redirecting: " +
-      href +
-      "</div>" +
-      "</div>";
-  } else if (panicKeys) {
-    thing23.innerHTML =
-      `<div class="panickeys">` +
-      "<div>" +
-      "Current key: " +
-      panicKeys +
-      "</div>" +
-      "<div>" +
-      " Redirecting: https://google.com" +
-      "</div>" +
-      "</div>";
-  } else {
-    thing23.innerHTML =
-      `<div class="panickeys">` +
-      "<div>" +
-      "Current key: `" +
-      "</div>" +
-      "<div>" +
-      " Redirecting: https://google.com" +
-      "</div>" +
-      "</div>";
-  }
-}
-
 function cloaking() {
   const name = document.getElementById("name").value;
   const favicon = document.querySelector(".favicon");
@@ -154,6 +70,9 @@ function changeName() {
       let title = alln[0];
       let image = alln[1];
       pageTon.innerHTML = title;
+      setInterval(() => {
+        pageTon.innerHTML = title;
+      }, 3000);
       favicon.outerHTML = `<link class="favicon" rel="icon" type="image/x-icon" href="${image}" />`;
     }
   }
@@ -408,11 +327,6 @@ function select() {
     }
   });
 }
-function gotIt() {
-  const tip = document.querySelector(".tip");
-  tip.style.display = "none";
-  localStorage.setItem("cccse", "yes");
-}
 
 function search() {
   let searchInput = document.getElementById("searchInput");
@@ -446,31 +360,6 @@ function search() {
   }
 }
 
-document.addEventListener("keydown", (event) => {
-  let panicKeys = localStorage.getItem("panic");
-  let href = localStorage.getItem("href");
-  if (panicKeys) {
-    if (href) {
-      let keys = panicKeys.split(",");
-      if (keys.length === 1 && event.key === keys[0]) {
-        window.location.href = href;
-      }
-    } else {
-      let href = "https://www.google.com";
-      let keys = panicKeys.split(",");
-      if (keys.length === 1 && event.key === keys[0]) {
-        window.location.href = href;
-      }
-    }
-  } else {
-    localStorage.setItem("panic", "`");
-    let keys = panicKeys.split(",");
-    if (keys.length === 1 && event.key === keys[0]) {
-      window.location.href = href;
-    }
-  }
-});
-
 setGameNames();
 changeName();
 updateTheme();
@@ -478,9 +367,7 @@ glowingTitle();
 
 document.addEventListener("DOMContentLoaded", function () {
   const bar = document.getElementById("sidebar");
-  const helpMenuItems = document.querySelectorAll(".cats");
   const helpMenus = document.querySelectorAll(".help-label");
-  const helpCarets = document.querySelectorAll(".caret");
   document.addEventListener("click", function () {
     bar.classList.remove("movingbar");
   });

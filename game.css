@@ -80,6 +80,10 @@ iframe {
   list-style-type: square;
 }
 
+.info ul li a {
+  color: white;
+}
+
 .infos {
   width: 95%;
   margin-inline: 2.5%;

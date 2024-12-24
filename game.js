@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => console.error("Error fetching data:", error));
   //Above is code for download button
   const gameFrame = document.getElementById("gameframe");
+  const gameIFrame = gameFrame.children[0].contentWindow;
   const fullScreen = document.getElementById("fullscreen");
+  let isGameActive = true;
   fullScreen.addEventListener("click", function () {
     if (document.fullscreenElement) {
       document.exitFullscreen();
@@ -36,7 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
       gameFrame.requestFullscreen();
     }
   });
-  //Above is code for full screen
+  gameFrame.addEventListener("mouseenter", () => (isGameActive = true));
+  gameFrame.addEventListener("mouseleave", () => (isGameActive = false));
+  setInterval(() => {
+    if (isGameActive && document.activeElement !== gameIFrame) {
+      gameIFrame.focus();
+    }
+  }, 1000);
+  //Above is code for full screen and focusing on the frame
   const gameShare = document.getElementById("game-share");
   const gameShareBtn = document.getElementById("game-share-btn");
   const share = document.getElementById("share");
@@ -81,17 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("macvgRecents", eRecent);
   }
   //Above is code for adding the game to recents
-  const gameIframe = document.getElementById("game-frame");
-  gameIframe.contentWindow.focus();
-  gameIframe.contentWindow.addEventListener("click", () => {
-    gameIframe.contentWindow.focus();
-  });
-  //Above is code for ensuring iframe is focused
   const sideSearch = document.getElementById("sideSearch");
   const sideSearchForm = sideSearch.parentElement;
   const nothing = document.getElementById("nothing");
   nothing.style.paddingTop = "0px";
   nothing.style.display = "none";
+  sideSearch.addEventListener('focus', () => isGameActive = false);
+  sideSearch.addEventListener('blur', () => isGameActive = true);
   sideSearchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const list = document.getElementById("list");

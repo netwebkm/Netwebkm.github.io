@@ -22,6 +22,10 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="MacVG is the ultimate gaming platform with 400+ games, unique features, and an engaging gaming experience. Discover, play, and connect with MacVG."
+    />
     <title class="cloak">Home | MacVG</title>
     <link class="favicon" rel="icon" type="image/x-icon" href="/logo.png" />
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -92,7 +96,7 @@
     </div>
     <script>
       let updateModal = document.querySelector(".modal-background");
-      if (localStorage.macvgmodal) {
+      if (localStorage.macvgmodall) {
         updateModal.style.display = "none";
       }
     </script>
@@ -227,7 +231,7 @@
         document.addEventListener("click", (e) => {
           if (e.target === updateModal) {
             e.target.style.display = "none";
-            localStorage.setItem("macvgmodal", "true");
+            localStorage.setItem("macvgmodall", "true");
           }
         });
       });
@@ -375,7 +379,7 @@
         }
       });
 
-      directionBtn.style.transform = "rotateX(180deg)"
+      directionBtn.style.transform = "rotateX(180deg)";
 
       directionBtn.addEventListener("click", () => {
         let img = directionBtn.children[0];
@@ -384,7 +388,7 @@
         } else {
           img.style.transform = "rotateX(180deg)";
         }
-          sortStuff(secondArray, "direction");
+        sortStuff(secondArray, "direction");
       });
     </script>
   </body>

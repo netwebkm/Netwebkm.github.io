@@ -22,10 +22,9 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title class="cloak">New | MacVG</title>
+    <title class="cloak" id="tab-title">Tag | MacVG</title>
     <link class="favicon" rel="icon" type="image/x-icon" href="/logo.png" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="games.css" />
   </head>
   <body>
     <nav class="nav" id="nav">
@@ -74,19 +73,8 @@
       <a href="/macblog/"><img src="/MacBlog Logo.png" alt="" /></a>
     </div>
     <div class="wrap" style="padding-bottom: 40px">
-      <style>
-        #feedback {
-          color: white;
-          text-decoration: none;
-          position: absolute;
-          margin: none;
-          top: 4px;
-          right: 0px;
-          margin-inline: 10px;
-        }
-      </style>
       <header class="homeheader">
-        <div class="title" name="New Games">New Games</div>
+        <div class="title" name="New Games" id="title">Two Player Games</div>
         <div
           class="sub"
           style="
@@ -95,43 +83,10 @@
             text-align: left;
             line-height: 30px;
           "
-        >
-          On each monthly update we add some more new unblocked games to MacVG,
-          and you can access the games added in the previous update here! Now
-          you can play all the new awesome games directly from the New tab!
-        </div>
+          id="description"
+        ></div>
       </header>
-      <div class="games-container">
-        <a class="game" id="game453">Axis Football League</a>
-        <a class="game" id="game454">Burrito Bisin Revenge</a>
-        <a class="game" id="game458">Dummy Never Fails</a>
-        <a class="game" id="game459">Dummy Never Fails 2</a>
-        <a class="game" id="game455">Fancy Pants Adventures 2</a>
-        <a class="game" id="game456">Fancy Pants Adventures 3</a>
-        <a class="game" id="game457">Galaga</a>
-        <a class="game" id="game460">Gunblood</a>
-        <a class="game" id="game474">Gun Mayhem</a>
-        <a class="game" id="game475">Gun Mayhem 2</a>
-        <a class="game" id="game476">Gun Mayhem Redux</a>
-        <a class="game" id="game477">Icycle</a>
-        <a class="game" id="game461">Learn to fly 2</a>
-        <a class="game" id="game478">Monster Truck Destroyer</a>
-        <a class="game" id="game462">Papa's Bakeria</a>
-        <a class="game" id="game463">Papa's Cheeseria</a>
-        <a class="game" id="game464">Papa's Cupcakeria</a>
-        <a class="game" id="game465">Papa's Donuteria</a>
-        <a class="game" id="game466">Papa's Freezeria</a>
-        <a class="game" id="game467">Papa's Hot Doggeria</a>
-        <a class="game" id="game468">Papa's Pancakeria</a>
-        <a class="game" id="game469">Papa's Pastaria</a>
-        <a class="game" id="game470">Papa's Scooperia</a>
-        <a class="game" id="game471">Papa's Sushiria</a>
-        <a class="game" id="game472">Papa's Taco Mia</a>
-        <a class="game" id="game473">Papa's Wingeria</a>
-        <a class="game" id="game479">Pokemon Emerald</a>
-        <a class="game" id="game480">Pokemon Emerald 2</a>
-        <a class="game" id="game481">Pokemon Firered</a>
-      </div>
+      <div class="games-container" id="tag-list"></div>
       
       <div class="ad-container">
         <!-- MacVG homepage ads -->
@@ -175,40 +130,7 @@
         >More games!</a
       >
     </footer>
+    <script src="tag.js"></script>
     <script src="app.js"></script>
-    <script>
-      let newArray = [];
-      let everythingArray = [];
-      let data;
-      fetch("games.json")
-        .then((response) => response.json())
-        .then((dataa) => {
-          data = dataa.games;
-          for (var i = 0; i < data.length; i++) {
-            newArray.push(data[i]);
-          }
-          everythingArray = newArray;
-          const games = document.querySelectorAll(".game");
-          games.forEach((gamee) => {
-            everythingArray.forEach((game) => {
-              if (gamee.id.slice(4) == game.id) {
-                gamee.style.backgroundImage = `linear-gradient(
-        rgba(40, 40, 40, 0.2),
-        rgba(20, 20, 20, 0.9)
-      ),
-      url("${game.link + game.thumb}")`;
-              }
-            });
-            gamee.removeAttribute("href");
-            gamee.addEventListener("click", () => {
-              const params = new URLSearchParams({
-                target: gamee.id.slice(4),
-              });
-              window.location.href = `game.html?${params.toString()}`;
-            });
-          });
-        })
-        .catch((error) => console.error("Error fetching data:", error));
-    </script>
   </body>
 </html>

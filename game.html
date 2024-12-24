@@ -63,7 +63,7 @@
             <ul>
               <li>Developer: <span id="game-developer"></span></li>
               <li>Category: <span id="game-category"></span></li>
-              <li>Genre: <span id="game-genre"></span></li>
+              <li>Genre: <a id="game-genre"></a></li>
               <li>Players: <span id="game-popularity"></span></li>
               <li>Release Date: <span id="game-release"></span></li>
               <li>Build: <span id="game-build"></span></li>
@@ -170,6 +170,7 @@
               gameRelease.innerHTML = game.releaseDate;
               gameDeveloper.innerHTML = game.dev;
               gameGenre.innerHTML = game.genre;
+              gameGenre.setAttribute("href",`/macvg/tag.html?tag=${game.genre.replace(/ /g,"-")}`);
               gameBuild.innerHTML = game.build;
               if (game.about.includes("Oops, you caught us")) {
                 gameDescription.parentElement.style.display = "none";

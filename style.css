@@ -81,7 +81,7 @@ body {
   padding-block: 10px;
   font-size: 18px;
   height: 100%;
-  width: 85%;
+  width: 88%;
   border-radius: 3px 0px 0px 3px;
   color: var(--text-color);
   padding-inline: 20px;
@@ -99,7 +99,7 @@ body {
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  right: 16%;
+  right: 13%;
   z-index: 100;
   border-radius: 5px;
   padding: 5px;
@@ -149,13 +149,13 @@ body {
   background-color: rgb(15, 15, 15);
   font-size: 21.6666px;
   cursor: pointer;
-  width: 15%;
+  width: 12%;
   transition: background-color 0.25s ease;
 }
 
 .functions {
-  width: 35%;
-  margin-inline: 32.5%;
+  width: 40%;
+  margin-inline: 30%;
   height: 46px;
   display: flex;
   flex-direction: row;
@@ -169,11 +169,11 @@ body {
 }
 
 .filters {
-  width: 35%;
+  width: 40%;
   margin-top: 25px;
   display: flex;
   gap: 15px;
-  margin-inline: 32.5%;
+  margin-inline: 30%;
 }
 
 .filter {
@@ -262,7 +262,7 @@ body {
 }
 
 .random:hover {
-  background-color: rgb(25, 25, 25);
+  background-color: #3C3C3C;
 }
 
 .homeheader {
