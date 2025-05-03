@@ -184,6 +184,10 @@ document.addEventListener("DOMContentLoaded", () => {
       description.innerHTML =
         "Football games let you control teams, make passes, and score touchdowns in fast-paced action. You’ll strategize, dodge opponents, and lead your team to victory on the field.";
       break;
+    case "Racing Games":
+      description.innerHTML =
+        "Racing games put you behind the wheel, speeding through tracks and outpacing rivals. You’ll master sharp turns, upgrade your ride, and race to victory in high-speed competitions.";
+      break;
     default:
       description.innerHTML = "Popular games across various genres.";
       break;
@@ -203,9 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
           newGameElement.innerHTML = game.name;
           list.appendChild(newGameElement);
           let newGameID = game.id;
-          newGameElement.style.backgroundImage = `url(${
-            game.link + game.thumb
-          })`;
+          newGameElement.style.backgroundImage = `url(${game.link + game.thumb})`;
           newGameElement.addEventListener("click", () => {
             const params = new URLSearchParams({ target: newGameID });
             window.location.href = `game.html?${params.toString()}`;

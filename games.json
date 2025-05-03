@@ -1,4 +1,4 @@
-{ 
+{
   "games": [
     {
       "id": 2,
@@ -37,12 +37,7 @@
       "build": "Unity WebGL",
       "dev": "flanne",
       "about": "10 Minutes Till Dawn is a very exciting fantasy survival game for you to play! Use WASD to move and dodge the creatures or else you'll loose hearts and die. Use your mouse to aim and click to shoot. You can collect the creature's coins when they die and upgrade your character to gain abilities!",
-      "controls": [
-        "WASD Keys: Move",
-        "Click: Shoot",
-        "R: Reload",
-        "Esc: Pause"
-      ],
+      "controls": ["WASD Keys: Move", "Click: Shoot", "R: Reload", "Esc: Pause"],
       "thumb": "splash.png"
     },
     {
@@ -193,12 +188,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Alexander Gettle",
       "about": "Awesome Tanks 2 is a very popular shooting game where you control a tank to defeat enemies in different levels and difficulties and earn money! Move around and react fast to defeat enemy tanks and take cover so you don't get shot by them! You can also shoot explosives to kill enemies. Remember to defeat every enemy to finish the level and earn the maximum reward! Use the money to upgrade your tank in different ways. Have fun!",
-      "controls": [
-        "Arrow / WASD Keys: Move",
-        "Click: Shoot",
-        "Mouse: Aim",
-        "Number Keys: Switch Weapons"
-      ],
+      "controls": ["Arrow / WASD Keys: Move", "Click: Shoot", "Mouse: Aim", "Number Keys: Switch Weapons"],
       "thumb": "logo.jpg"
     },
     {
@@ -274,12 +264,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Blumgi",
       "about": "In this fun and satisfying game Blumgi Slime, your goal is to control the slime and jump your way to the end! All you can do is jump, but you need to jump at just the right angle and force to either overcome an obstacle, bounce, or dodge a cliff! If you fall into water, than it's game over. Use the walls wisely to bounce and change the slime's direction! This game is even more fun when you're playing in two players, because you get to compete with your friend who reaches the goal first! Have fun!",
-      "controls": [
-        "Space Bar / Click: Jump",
-        "A: Jump (Player 1)",
-        "M: Jump (Player 2)",
-        "R: Restart"
-      ],
+      "controls": ["Space Bar / Click: Jump", "A: Jump (Player 1)", "M: Jump (Player 2)", "R: Restart"],
       "thumb": "logo.jpg"
     },
     {
@@ -454,11 +439,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Lax Viking Games",
       "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
-      "controls": [
-        "Arrow / WASD Keys: Move",
-        "R / Space: Reload",
-        "Click: Shoot"
-      ],
+      "controls": ["Arrow / WASD Keys: Move", "R / Space: Reload", "Click: Shoot"],
       "thumb": "thumb.png"
     },
     {
@@ -519,10 +500,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Anonymous",
       "about": "In this fun and fast paced reaction game, your goal is to control the character to either go left or right down the hill, avoiding obstacles like trees, lava, spikes, cars, bombs, honey, and more. Plan your route while having a fast reaction time, because anything can happen to knock you off the hill! Collect diamonds on the hill to buy new cosmetics. Have fun!",
-      "controls": [
-        "Left Arrow / Click Left: Go Left",
-        "Right Arrow / Click Right: Go Right"
-      ],
+      "controls": ["Left Arrow / Click Left: Go Left", "Right Arrow / Click Right: Go Right"],
       "thumb": "logo.jpg"
     },
     {
@@ -1477,11 +1455,7 @@
       "build": "Unity WebGL",
       "dev": "RobKaySF",
       "about": "In Slope, this exciting fast-paced action game, you need to navigate a ball down an endless slope with breakneck speeds! There are cliffs, curves, blocks, and all sorts of obstacles that you need to dodge and jump! Don't hit any red blocks, and don't go off the slope! There are speed up ramps that speeds up the ball even more, making the game even more intense! Try to avoid falling off the slope for as long as possible and get the most points! React fast, navigate accurately, and stay on track!",
-      "controls": [
-        "Left Arrow: Go Left",
-        "Right Arrow: Go right",
-        "Note: WASD keys also work"
-      ],
+      "controls": ["Left Arrow: Go Left", "Right Arrow: Go right", "Note: WASD keys also work"],
       "thumb": "slope4.jpeg"
     },
     {
@@ -1712,7 +1686,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Roll / Smash",
-        "Left / Right Arros: Dash Left / Right",
+        "Left / Right Arrows: Dash Left / Right",
         "Space: Activate Hoverboard",
         "Esc: Pause"
       ],
@@ -1734,7 +1708,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Roll / Smash",
-        "Left / Right Arros: Dash Left / Right",
+        "Left / Right Arrows: Dash Left / Right",
         "Space: Activate Hoverboard",
         "Esc: Pause"
       ],
@@ -1983,7 +1957,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Slide / Dodge",
-        "Left / Right Arros: Move Left / Right",
+        "Left / Right Arrows: Move Left / Right",
         "Note: WASD keys also work"
       ],
       "thumb": "vex3.png"
@@ -2003,7 +1977,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Slide / Dodge",
-        "Left / Right Arros: Move Left / Right",
+        "Left / Right Arrows: Move Left / Right",
         "Note: WASD keys also work"
       ],
       "thumb": "vex4.png"
@@ -2023,7 +1997,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Slide / Dodge",
-        "Left / Right Arros: Move Left / Right",
+        "Left / Right Arrows: Move Left / Right",
         "Note: WASD keys also work"
       ],
       "thumb": "vex.jpeg"
@@ -2043,7 +2017,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Slide / Dodge",
-        "Left / Right Arros: Move Left / Right",
+        "Left / Right Arrows: Move Left / Right",
         "Note: WASD keys also work"
       ],
       "thumb": "assets/icon.jpeg"
@@ -2064,7 +2038,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Slide / Dodge",
-        "Left / Right Arros: Move Left / Right",
+        "Left / Right Arrows: Move Left / Right",
         "Note: WASD keys also work"
       ],
       "thumb": "assets/icon.jpeg"
@@ -2084,7 +2058,7 @@
       "controls": [
         "Up Arrow: Jump",
         "Down Arrow: Slide / Dodge",
-        "Left / Right Arros: Move Left / Right",
+        "Left / Right Arrows: Move Left / Right",
         "Note: WASD keys also work"
       ],
       "thumb": "assets/icon.png"
@@ -3030,11 +3004,7 @@
       "build": "HTML5, JavaScript",
       "dev": "IriySoft",
       "about": "In this fun driving game, your goal is to bike forward and collect coins to upgrade your bike and get the high score! Control your bike precisely to balance it and climb steep hills, roller coasters, and razor-sharp rocks! Spend your coins on different upgrades to enhance your bike. Have fun biking on this bizzare, victorian steampunk themed street!",
-      "controls": [
-        "Up Arrow: Forward",
-        "Down Arrow: Backward",
-        "Left / Right Arrow: Tilt"
-      ],
+      "controls": ["Up Arrow: Forward", "Down Arrow: Backward", "Left / Right Arrow: Tilt"],
       "thumb": "logo.jpg"
     },
     {
@@ -3191,10 +3161,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Beedo Games",
       "about": "In this fun and highly skilled car driving game, you have only one goal. Don't let the egg drop to the ground! Manuever the car around the hills and valleys cleverly to keep the egg in your car's container and try not to let it drop and crack! Stop or go forward at just the right time to keep your egg balanced. Collect coins on your ride to buy new cars and try out new strategies! Have fun!",
-      "controls": [
-        "Left Arrow / A / Left Pedal: Backward",
-        "Right Arrow / D / Right Pedal: Forward"
-      ],
+      "controls": ["Left Arrow / A / Left Pedal: Backward", "Right Arrow / D / Right Pedal: Forward"],
       "thumb": "logo.jpg"
     },
     {
@@ -3209,11 +3176,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Famobi",
       "about": "In this fun truck driving game, you need to control your car to complete the missions of the level, while driving through obstacles and keeping fuel in check. Each level has three missions, and to beat the level, you need to complete all of them in one run. Tilt left or tilt right to perform flips in midair, and adjust the truck's balance to land perfectly and receive a boost! There are fuel boxes that recharge your fuel. Don't miss them or you'll run out of gas! Jump to get over obstacles. Every time you do a stunt or collect them during the drive, you earn cash which you can use to upgrade your truck and drive even longer and beat your personal record!",
-      "controls": [
-        "Left Arrow: Tilt Left",
-        "Right Arrow: Tilt Right",
-        "Space: Jump"
-      ],
+      "controls": ["Left Arrow: Tilt Left", "Right Arrow: Tilt Right", "Space: Jump"],
       "thumb": "logo.jpg"
     },
     {
@@ -3288,12 +3251,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Poki",
       "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
-      "controls": [
-        "Arrow Keys: Move (Player 1)",
-        "Space: Shoot (Player 1)",
-        "WASD Keys: Move (Player 2)",
-        "Q: Shoot (Player 2)"
-      ],
+      "controls": ["Arrow Keys: Move (Player 1)", "Space: Shoot (Player 1)", "WASD Keys: Move (Player 2)", "Q: Shoot (Player 2)"],
       "thumb": "logo.jpg"
     },
     {
@@ -3750,8 +3708,7 @@
       "releaseDate": "Jul 29, 2005",
       "rating": "TODO",
       "link": "https://macvg-games.github.io/strategy-games/battleforgondor/",
-      "genre": "Tower Defense Games"
-      ,
+      "genre": "Tower Defense Games",
       "build": "Flash",
       "dev": "Games of Gondor",
       "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
@@ -3863,11 +3820,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Blumgi",
       "about": "Blumgi Rocket is a popular and satisfying game where you need to control a rocket-equipped car through all kinds of interesting obstacles and reach the end. Use your driving skills to conquer the unique terrains and use your rocket wisely to shoot through the finish line! Hold the space bar to charge it and use the arrow keys to aim the path of the rocket! Have fun!",
-      "controls": [
-        "Arrow / WASD Keys: Move",
-        "Space: Charge Rocket",
-        "R: Restart"
-      ],
+      "controls": ["Arrow / WASD Keys: Move", "Space: Charge Rocket", "R: Restart"],
       "thumb": "thumb.png"
     },
     {
@@ -5468,10 +5421,7 @@
       "build": "HTML5, JavaScript",
       "dev": "Jeff Ramos",
       "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
-      "controls": [
-        "Arrow Keys: Move",
-        "Note: WASD keys and dragging also work"
-      ],
+      "controls": ["Arrow Keys: Move", "Note: WASD keys and dragging also work"],
       "thumb": "logo.jpg"
     },
     {
@@ -6598,6 +6548,323 @@
       "dev": "Game Freak",
       "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
       "controls": ["Still working on this one O_O"],
+      "thumb": "logo.jpg"
+    },
+    {
+      "id": 482,
+      "name": "Bally",
+      "catagory": "strategy",
+      "popularity": "500K+",
+      "releaseDate": "Unknown",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/strategy-games/bally/",
+      "genre": "Physics-Based Strategy Games",
+      "build": "HTML5, JavaScript",
+      "dev": "Anonymous",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumb.png"
+    },
+    {
+      "id": 483,
+      "name": "Bicycle Stunt 3D",
+      "catagory": "driving",
+      "popularity": "500K+",
+      "releaseDate": "Unknown",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/driving-games/bicycle-stunt-3d/",
+      "genre": "Biking Games",
+      "build": "Unity WebGL",
+      "dev": "Anonymous",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumbnail.jpg"
+    },
+    {
+      "id": 484,
+      "name": "Bob the Robber 4",
+      "catagory": "action",
+      "popularity": "10M+",
+      "releaseDate": "July 30, 2017",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/bob-the-robber-4/",
+      "genre": "Escaping Games",
+      "build": "HTML5, JavaScript",
+      "dev": "Meow Beast",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumb.png"
+    },
+    {
+      "id": 485,
+      "name": "Bottle Flip 3D",
+      "catagory": "casual",
+      "popularity": "5M+",
+      "releaseDate": "October 2019",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/casual-games/bottle-flip-3d/",
+      "genre": "Casual Games",
+      "build": "Unity WebGL",
+      "dev": "BPTop",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumb.png"
+    },
+    {
+      "id": 486,
+      "name": "Bullet Force",
+      "catagory": "action",
+      "popularity": "100M+",
+      "releaseDate": "June 13, 2016",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/bullet-force/",
+      "genre": "Shooter Games",
+      "build": "Unity WebGL",
+      "dev": "Blayze Games",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumb.jpg"
+    },
+    {
+      "id": 487,
+      "name": "Burnin' Rubber 5 XS",
+      "catagory": "driving",
+      "popularity": "10M+",
+      "releaseDate": "October 15, 2020",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/driving-games/burnin-rubber-5xs/",
+      "genre": "Racing Games",
+      "build": "Unity WebGL",
+      "dev": "XformGames",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Arrow Keys: Drive", "Z: Weapon 1", "X: Weapon 2"],
+      "thumb": "thumb.jpg"
+    },
+    {
+      "id": 488,
+      "name": "Cartoon Mini Racing",
+      "catagory": "driving",
+      "popularity": "10M+",
+      "releaseDate": "June 5, 2018",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/driving-games/cartoon-mini-racing/",
+      "genre": "Racing Games",
+      "build": "Unity WebGL",
+      "dev": "Brain Software",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Arrow Keys: Drive", "H: Reset Car"],
+      "thumb": "thumb.jpg"
+    },
+    {
+      "id": 489,
+      "name": "Run 2",
+      "catagory": "action",
+      "popularity": "50M+",
+      "releaseDate": "March 21, 2011",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/run-2/",
+      "genre": "Endless Runner Games",
+      "build": "HTML5, JavaScript",
+      "dev": "Player_03",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Up Arrow: Jump", "Left / Right Arrows: Move"],
+      "thumb": "thumb.png"
+    },
+    {
+      "id": 490,
+      "name": "Skywire",
+      "catagory": "action",
+      "popularity": "500K+",
+      "releaseDate": "March 28, 2007",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/skywire/",
+      "genre": "Timing Games",
+      "build": "Flash",
+      "dev": "Nitrome",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumb.avif"
+    },
+    {
+      "id": 491,
+      "name": "Whack your Boss",
+      "catagory": "casual",
+      "popularity": "1M+",
+      "releaseDate": "November 11, 2004",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/casual-games/whack-your-boss/",
+      "genre": "Relaxing Games",
+      "build": "Flash",
+      "dev": "Tom Winkler",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Still working on this one O_O"],
+      "thumb": "thumb.jpg"
+    },
+    {
+      "id": 492,
+      "name": "Crazy Tunnel 3D",
+      "catagory": "action",
+      "popularity": "500K+",
+      "releaseDate": "May 19, 2022",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/crazy-tunnel-3d/",
+      "genre": "Reaction Games",
+      "build": "Unity WebGL",
+      "dev": "Anonymous",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Left / Right Arrows: Dash Left / Right", "Up Arrow / W Key: Jump"],
+      "thumb": "thumb.webp"
+    },
+    {
+      "id": 493,
+      "name": "Eagle Ride",
+      "catagory": "action",
+      "popularity": "5M+",
+      "releaseDate": "October 2019",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/eagle-ride/",
+      "genre": "Reaction Games",
+      "build": "Unity WebGL",
+      "dev": "Aron Sommer",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Arrow / WASD Keys: Dash Left / Right"],
+      "thumb": "logo.avif"
+    },
+    {
+      "id": 494,
+      "name": "Earn to Die",
+      "catagory": "driving",
+      "popularity": "100M+",
+      "releaseDate": "March 11, 2013",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/driving-games/earn-to-die/",
+      "genre": "Car Racing Games",
+      "build": "Unity WebGL",
+      "dev": "Toffee Games",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": [
+        "Up Arrow: Forward",
+        "Down Arrow: Backward",
+        "Left / Right Arrows: Tilt",
+        "Esc: Pause",
+        "Note: WASD keys also work"
+      ],
+      "thumb": "logo.png"
+    },
+    {
+      "id": 495,
+      "name": "Electron Dash",
+      "catagory": "action",
+      "popularity": "1M+",
+      "releaseDate": "Unknown",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/electron-dash/",
+      "genre": "Endless Runner Games",
+      "build": "Unity WebGL",
+      "dev": "DQV Studio",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Left / Right Arrows: Dash Left / Right", "Up Arrow / Space: Jump", "Note: WASD keys also work"],
+      "thumb": "logo.png"
+    },
+    {
+      "id": 496,
+      "name": "Endless Tunnel",
+      "catagory": "action",
+      "popularity": "500K+",
+      "releaseDate": "Unknown",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/endless-tunnel/",
+      "genre": "Reaction Games",
+      "build": "Unity WebGL",
+      "dev": "Anonymous",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Left / Right Arrow Keys: Turn Left / Right"],
+      "thumb": "logo.png"
+    },
+    {
+      "id": 497,
+      "name": "Fisherman Life",
+      "catagory": "casual",
+      "popularity": "1M+",
+      "releaseDate": "February 2022",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/casual-games/fisherman-life/",
+      "genre": "Casual Games",
+      "build": "Unity WebGL",
+      "dev": "Izyplay Game Studio",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Arrow / WASD Keys: Move"],
+      "thumb": "logo.webp"
+    },
+    {
+      "id": 498,
+      "name": "Football Run",
+      "catagory": "action",
+      "popularity": "1M+",
+      "releaseDate": "Unknown",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/football-run/",
+      "genre": "Platformer Games",
+      "build": "Unity WebGL",
+      "dev": "Anonymous",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Up Arrow: Jump", "Down Arrow: Slide / Smash"],
+      "thumb": "logo.jpg"
+    },
+    {
+      "id": 499,
+      "name": "Gladihoppers",
+      "catagory": "action",
+      "popularity": "10M+",
+      "releaseDate": "December 19, 2018",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/gladihoppers/",
+      "genre": "Dueling Games",
+      "build": "Unity WebGL",
+      "dev": "Dreamon Studios",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["WASD Keys: Move", "Arrow Keys: Attack", "Space: Switch Stance", "Esc: Pause"],
+      "thumb": "logo.jpg"
+    },
+    {
+      "id": 500,
+      "name": "Glitch Dash",
+      "catagory": "action",
+      "popularity": "10M+",
+      "releaseDate": "February 21, 2018",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/glitch-dash/",
+      "genre": "Endless Runner Games",
+      "build": "Unity WebGL",
+      "dev": "David Marquardt",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": ["Arrow Keys: Move", "S: Use Shield"],
+      "thumb": "logo.avif"
+    },
+    {
+      "id": 501,
+      "name": "Ohio Fortnite",
+      "catagory": "action",
+      "popularity": "5M+",
+      "releaseDate": "Unknown",
+      "rating": "TODO",
+      "link": "https://macvg-games.github.io/action-games/ohio-fortnite/",
+      "genre": "Shooter Games",
+      "build": "Unity WebGL",
+      "dev": "DiaoChangNan",
+      "about": "Oops, you caught us, we're still working hard to provide game description on this game! In the upcoming updates, more and more games will have their descriptions and instructions to help you beat it, so stay tuned for more updates!",
+      "controls": [
+        "WASD Keys: Move",
+        "Mouse: Aim",
+        "Click: Shoot",
+        "Space: Jump",
+        "Shift: Run",
+        "R: Reload",
+        "F: Action",
+        "M: Map",
+        "Number Keys: Switch Weapons",
+        "Esc: Pause"
+      ],
       "thumb": "logo.jpg"
     }
   ]

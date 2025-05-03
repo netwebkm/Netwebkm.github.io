@@ -89,7 +89,7 @@ body {
 }
 
 .search-clear {
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   height: 37px;
   width: 37px;
   border: none;
@@ -164,7 +164,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   gap: 2px;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   position: relative;
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 .random:hover {
-  background-color: #3C3C3C;
+  background-color: #3c3c3c;
 }
 
 .homeheader {
@@ -275,12 +275,7 @@ body {
   transition: background 0.2s ease;
   font-size: 35px;
   font-weight: bold;
-  background: linear-gradient(
-    to right,
-    var(--f-t-color),
-    var(--s-t-color),
-    var(--t-t-color)
-  );
+  background: linear-gradient(to right, var(--f-t-color), var(--s-t-color), var(--t-t-color));
   background-clip: text;
   z-index: 30;
   padding-bottom: 15px;
@@ -296,12 +291,7 @@ body {
   top: 0px;
   height: 100px;
   width: 100%;
-  background: linear-gradient(
-    to right,
-    var(--f-t-color),
-    var(--s-t-color),
-    var(--t-t-color)
-  );
+  background: linear-gradient(to right, var(--f-t-color), var(--s-t-color), var(--t-t-color));
   position: absolute;
   background-clip: text;
   filter: blur(15px);
@@ -684,21 +674,42 @@ h2 {
   background-color: black;
   color: white;
   text-align: center;
-  padding-block: 15px;
+  padding-block: 30px;
   line-height: 28px;
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
 }
 
 .footer a {
   color: white;
-  text-decoration: none;
-  background-color: black;
-  transition: color 0.15s ease;
 }
 
-.footer a:hover {
-  color: rgb(225, 139, 9);
-  text-decoration: underline;
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-icon:hover {
+  background-color: rgb(25, 25, 25);
 }
 
 #name:focus,
@@ -959,35 +970,9 @@ h2 {
   color: white;
 }
 
-.game::before {
-  content: attr(name);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90px;
-  height: 80%;
-  opacity: 0;
-  background-color: var(--bg-color);
-  opacity: 0;
-  padding-inline: 10px;
-  padding-block: 12px;
-  transition: 0.3s;
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: end;
-  font-size: 14px;
-  text-align: center;
-  transition: opacity 0.3s ease;
-}
-
 .info-popup {
   position: absolute;
   z-index: 100000;
-}
-
-.game:hover::before {
-  opacity: 0.6;
 }
 
 .game:hover {

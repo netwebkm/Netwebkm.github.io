@@ -135,12 +135,7 @@ function sortStuff(targetArray, key) {
 }
 
 function filterStuff(colorArray, color) {
-  if (
-    color === "action" ||
-    color === "strategy" ||
-    color === "casual" ||
-    color === "driving"
-  ) {
+  if (color === "action" || color === "strategy" || color === "casual" || color === "driving") {
     let finalArray = [];
     let finalArrayIds = [];
     colorArray.forEach((item) => {
@@ -343,6 +338,8 @@ function search() {
       }
       searchInput.focus();
     });
+  } else if (searchInput.value === "") {
+    searchClear.style.display = "none";
   }
   var searchTerm = document.getElementById("searchInput").value.toLowerCase();
   var list = document.getElementById("list");
@@ -379,8 +376,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", (e) => {
     if (!e.target.classList.contains("help-menu")) {
       helpMenus.forEach((helpMenu) => {
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(0)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(0)";
         helpMenu.parentElement.removeAttribute("style");
         helpMenu.parentElement.querySelector(".caret").removeAttribute("style");
       });
@@ -388,19 +384,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   helpMenus.forEach((helpMenu) => {
     helpMenu.addEventListener("click", () => {
-      let transformValue = window
-        .getComputedStyle(helpMenu.parentElement.querySelector(".cats"))
-        .getPropertyValue("transform");
+      let transformValue = window.getComputedStyle(helpMenu.parentElement.querySelector(".cats")).getPropertyValue("transform");
       console.log(transformValue);
       if (transformValue !== "matrix(1, 0, 0, 1, 0, 0)") {
         helpMenu.parentElement.style.backgroundColor = "rgba(15, 15, 15, 0.8)";
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(1)";
-        helpMenu.parentElement.querySelector(".caret").style.transform =
-          "rotate(0deg)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(1)";
+        helpMenu.parentElement.querySelector(".caret").style.transform = "rotate(0deg)";
       } else {
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(0)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(0)";
         helpMenu.parentElement.removeAttribute("style");
         helpMenu.parentElement.querySelector(".caret").removeAttribute("style");
       }
@@ -409,39 +400,31 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", (e) => {
     if (e.target.classList.contains("caret")) {
       let helpMenu = e.target.parentElement.getElementsByTagName("span")[0];
-      let transformValue = window
-        .getComputedStyle(helpMenu.parentElement.querySelector(".cats"))
-        .getPropertyValue("transform");
+      let transformValue = window.getComputedStyle(helpMenu.parentElement.querySelector(".cats")).getPropertyValue("transform");
       if (transformValue !== "matrix(1, 0, 0, 1, 0, 0)") {
         helpMenu.parentElement.style.backgroundColor = "rgba(15, 15, 15, 0.8)";
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(1)";
-        helpMenu.parentElement.querySelector(".caret").style.transform =
-          "rotate(0deg)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(1)";
+        helpMenu.parentElement.querySelector(".caret").style.transform = "rotate(0deg)";
       } else {
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(0)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(0)";
         helpMenu.parentElement.removeAttribute("style");
         helpMenu.parentElement.querySelector(".caret").removeAttribute("style");
       }
     }
     if (e.target.classList.contains("select")) {
       let helpMenu = e.target.getElementsByTagName("span")[0];
-      let transformValue = window
-        .getComputedStyle(helpMenu.parentElement.querySelector(".cats"))
-        .getPropertyValue("transform");
+      let transformValue = window.getComputedStyle(helpMenu.parentElement.querySelector(".cats")).getPropertyValue("transform");
       if (transformValue !== "matrix(1, 0, 0, 1, 0, 0)") {
         helpMenu.parentElement.style.backgroundColor = "rgba(15, 15, 15, 0.8)";
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(1)";
-        helpMenu.parentElement.querySelector(".caret").style.transform =
-          "rotate(0deg)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(1)";
+        helpMenu.parentElement.querySelector(".caret").style.transform = "rotate(0deg)";
       } else {
-        helpMenu.parentElement.querySelector(".cats").style.transform =
-          "scaleY(0)";
+        helpMenu.parentElement.querySelector(".cats").style.transform = "scaleY(0)";
         helpMenu.parentElement.removeAttribute("style");
         helpMenu.parentElement.querySelector(".caret").removeAttribute("style");
       }
     }
   });
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
